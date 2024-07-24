@@ -1,0 +1,3 @@
+<button type="button" onclick="loadXMLDoc()">Request</button>
+<p>
+Hello, I am a response from the server!!!
