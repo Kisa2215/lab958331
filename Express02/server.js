@@ -14,7 +14,7 @@ if (client.readyState === WebSocket.OPEN) {
 client.send(message.toString());
 }
 });
-});nodemon app.js
+});
 ws.on('close', () => {
 console.log('A client disconnected.');
 });
