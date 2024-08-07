@@ -3,7 +3,7 @@ const WebSocket = require('ws');
 
 const app = express();
 
-const wss = new WebSocket.Server({ port: 8080 });
+const wss = new WebSocket.Server({ port: 3080 });
 
 wss.on('connection', (ws) => {
 console.log('A new client connected.');
@@ -14,7 +14,7 @@ if (client.readyState === WebSocket.OPEN) {
 client.send(message.toString());
 }
 });
-});
+});nodemon app.js
 ws.on('close', () => {
 console.log('A client disconnected.');
 });
