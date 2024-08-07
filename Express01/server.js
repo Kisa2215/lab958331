@@ -3,7 +3,7 @@ const WebSocket = require('ws');
 
 const app = express();
 
-const wss = new WebSocket.Server({ port: 3080 });
+const wss = new WebSocket.Server({ port: 3010 });
 
 wss.on('connection', (ws) => {
 console.log('A new client connected.');
@@ -20,7 +20,7 @@ console.log('A client disconnected.');
 });
 });
 
-const port = 3080;
+const port = 3010;
 app.listen(port, () => {
 console.log(`Server started on http://localhost:${port}`);
 });
